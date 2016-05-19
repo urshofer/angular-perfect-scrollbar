@@ -28,6 +28,14 @@ angular.module('perfect_scrollbar', []).directive('perfectScrollbar',
             options[opt] = $parse($attr[opt])();
           }
         }
+        
+        $scope.$watch(function() {
+          return $elem.prop('scrollHeight');
+        }, function(newValue, oldValue) {
+          if (newValue) {
+            update('contentSizeChange');
+          }
+        });
 
         $scope.$evalAsync(function() {
           Ps.initialize(el, options);
