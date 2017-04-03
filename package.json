@@ -1,28 +1,88 @@
 {
-  "name": "angular-perfect-scrollbar",
-  "version": "1.1.3",
-  "private": false,
-  "scripts": {
-    "test": "grunt"
+  "_args": [
+    [
+      {
+        "raw": "angular-perfect-scrollbar@git+https://github.com/urshofer/angular-perfect-scrollbar.git",
+        "scope": null,
+        "escapedName": "angular-perfect-scrollbar",
+        "name": "angular-perfect-scrollbar",
+        "rawSpec": "git+https://github.com/urshofer/angular-perfect-scrollbar.git",
+        "spec": "git+https://github.com/urshofer/angular-perfect-scrollbar.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:urshofer/angular-perfect-scrollbar.git",
+          "sshUrl": "git+ssh://git@github.com/urshofer/angular-perfect-scrollbar.git",
+          "httpsUrl": "git+https://github.com/urshofer/angular-perfect-scrollbar.git",
+          "gitUrl": "git://github.com/urshofer/angular-perfect-scrollbar.git",
+          "shortcut": "github:urshofer/angular-perfect-scrollbar",
+          "directUrl": "https://raw.githubusercontent.com/urshofer/angular-perfect-scrollbar/master/package.json"
+        }
+      },
+      "/Users/urshofer/Documents/Work/Repositories/skulpturen-projekte-2017"
+    ]
+  ],
+  "_from": "git+https://github.com/urshofer/angular-perfect-scrollbar.git",
+  "_id": "angular-perfect-scrollbar@1.1.3",
+  "_inCache": true,
+  "_location": "/angular-perfect-scrollbar",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "angular-perfect-scrollbar@git+https://github.com/urshofer/angular-perfect-scrollbar.git",
+    "scope": null,
+    "escapedName": "angular-perfect-scrollbar",
+    "name": "angular-perfect-scrollbar",
+    "rawSpec": "git+https://github.com/urshofer/angular-perfect-scrollbar.git",
+    "spec": "git+https://github.com/urshofer/angular-perfect-scrollbar.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:urshofer/angular-perfect-scrollbar.git",
+      "sshUrl": "git+ssh://git@github.com/urshofer/angular-perfect-scrollbar.git",
+      "httpsUrl": "git+https://github.com/urshofer/angular-perfect-scrollbar.git",
+      "gitUrl": "git://github.com/urshofer/angular-perfect-scrollbar.git",
+      "shortcut": "github:urshofer/angular-perfect-scrollbar",
+      "directUrl": "https://raw.githubusercontent.com/urshofer/angular-perfect-scrollbar/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/urshofer/angular-perfect-scrollbar.git#a6c8b4779f8225bb3262399401311d6bbd17e196",
+  "_shasum": "11892d9b62d67249682eb3aeaab7c9b03c39f29c",
+  "_shrinkwrap": null,
+  "_spec": "angular-perfect-scrollbar@git+https://github.com/urshofer/angular-perfect-scrollbar.git",
+  "_where": "/Users/urshofer/Documents/Work/Repositories/skulpturen-projekte-2017",
+  "author": {
+    "name": "Drew Miller"
+  },
+  "bugs": {
+    "url": "https://github.com/CareerCruising/angular-perfect-scrollbar/issues"
   },
   "dependencies": {
-    "perfect-scrollbar": "~0.6.7",
-    "angular": "*"
+    "angular": "*",
+    "perfect-scrollbar": "~0.6.7"
   },
+  "description": "> This fork will fix the broken dependency on [perfect-scrollbar](https://github.com/noraesae/perfect-scrollbar) and is\r compatible with [perfect-scrollbar](https://github.com/noraesae/perfect-scrollbar) v-6.0.0 and up",
   "devDependencies": {
     "grunt": "^0.4.2",
     "grunt-contrib-jshint": "^0.8.0"
   },
-  "description": "> This fork will fix the broken dependency on [perfect-scrollbar](https://github.com/noraesae/perfect-scrollbar) and is\r compatible with [perfect-scrollbar](https://github.com/noraesae/perfect-scrollbar) v-6.0.0 and up",
+  "gitHead": "a6c8b4779f8225bb3262399401311d6bbd17e196",
+  "homepage": "https://github.com/CareerCruising/angular-perfect-scrollbar#readme",
+  "license": "MIT",
   "main": "src/angular-perfect-scrollbar.js",
+  "name": "angular-perfect-scrollbar",
+  "optionalDependencies": {},
+  "private": false,
+  "readme": "#cc-angular-perfect-scrollbar\n> This fork will fix the broken dependency on [perfect-scrollbar](https://github.com/noraesae/perfect-scrollbar) and is\ncompatible with [perfect-scrollbar](https://github.com/noraesae/perfect-scrollbar) v-6.0.0 and up\n\nInstallation\n=========================\n\nInstall via Bower:\n\n````\n$ bower install cc-angular-perfect-scrollbar --save\n```\n\nInclude the angular-perfect-scrollbar files in your index.html:\n\n````\n<link rel=\"stylesheet\" href=\"bower_components/perfect-scrollbar/min/perfect-scrollbar.min.css\" />\n<script src=\"bower_components/cc-perfect-scrollbar/min/perfect-scrollbar.min.js\"></script>\n<script src=\"bower_components/cc-perfect-scrollbar/min/perfect-scrollbar.with-mousewheel.min.js\"></script>\n<script src=\"bower_components/cc-angular-perfect-scrollbar/src/angular-perfect-scrollbar.js\"></script>\n```\n\nInclude some css for your scrollable content:\n\n````\n.scroller {\n    white-space: pre-line;\n    height: 500px;\n    overflow-y: hidden;\n    position: relative;\n}\n````\n\nAdd it as module to your app.js:\n\n````\n['perfect_scrollbar']\n````\n\nUse it wherever you want:\n\n````\n<perfect-scrollbar class=\"scroller\"  wheel-propagation=\"true\" wheel-speed=\"2\" min-scrollbar-length=\"20\">\n  // your content\n</perfect-scrollbar>\n````\n\nFurther installation and usage hints can be found here:\n\nhttps://github.com/noraesae/perfect-scrollbar\n",
+  "readmeFilename": "README.md",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CareerCruising/angular-perfect-scrollbar.git"
   },
-  "author": "Drew Miller",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/CareerCruising/angular-perfect-scrollbar/issues"
+  "scripts": {
+    "test": "grunt"
   },
-  "homepage": "https://github.com/CareerCruising/angular-perfect-scrollbar#readme"
+  "version": "1.1.3"
 }
